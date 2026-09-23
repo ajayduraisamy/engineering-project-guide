@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const i=document.querySelector('#project-search');const list=document.querySelector('#project-list');if(!i||!list)return;[...list.children].forEach(c=>i.addEventListener('input',()=>c.hidden=!!i.value&&!c.textContent.toLowerCase().includes(i.value.toLowerCase())))});
